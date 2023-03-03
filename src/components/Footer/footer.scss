@@ -1,3 +1,19 @@
 footer {
-
+  background: url('../../assets/images/bg_footer.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 355px;
+  @apply flex flex-col justify-between;
+  .footer-container {
+    @apply flex flex-col gap-[12px] justify-center items-center grow;
+    .private-container {
+      @apply flex gap-[24px] text-white text-[16px] font-[400];
+    }
+    .social-container {
+      @apply flex gap-[30px];
+    }
+  }
+  .footer-title {
+    @apply flex justify-center items-center h-[50px] border-[white]/[0.4] border-t-[1px] text-[16px] text-white font-[400];
+  }
 }
