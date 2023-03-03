@@ -4,3 +4,12 @@
 
 @import './components/Layout/layout';
 @import './pages/HomePage/homepage';
+
+@font-face {
+  font-family: 'Finlandica';
+  src: url('./assets/fonts/Finlandica-Regular.ttf');
+}
+.font-finlandica {
+  font-family: 'Finlandica';
+  src: url('./assets/fonts/Finlandica-Regular.ttf');
+}
