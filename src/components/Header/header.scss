@@ -1,3 +1,42 @@
 header {
-
+  @apply flex justify-between items-center h-[80px] border-b-[1px] border-white/[0.4];
+  .logo-container {
+    @apply flex h-full gap-[14px] xs:gap-[18px] sm:gap-[20px] lg:gap-[30px] xl:gap-[50px] pl-[18px] sm:pl-[20px] lg:pl-[30px] xl:pl-[50px];
+    >div {
+      @apply flex justify-center items-center gap-[10px];
+    }
+    .borderline {
+      @apply hidden xs:block border-r-[1px] border-white/[0.4] h-full;
+    }
+  }
+  .navbar-container {
+    @apply flex justify-between items-center gap-[14px] lg:gap-[20px] xl:gap-[36px] px-[18px] lg:px-[22px] xl:px-[24px] grow;
+    .search-box {
+      @apply flex items-center gap-[10px] border-[1px] border-white/[0.6] rounded-[100px] px-[16px] py-[14px] w-full relative;
+      input {
+        @apply outline-none border-none text-[14px] font-[400] max-w-[600px] w-full px-[10px] bg-transparent text-white;
+      }
+      >div {
+        @apply absolute right-[16px];
+      }
+    }
+    .nav-list {
+      @apply hidden md:flex gap-[14px] lg:gap-[20px] xl:gap-[28px] text-white text-[16px] font-[400];
+      a {
+        @apply border-b-[1px] border-transparent;
+        &:hover {
+          @apply border-b-[1px] border-white;
+        }
+      }
+    }
+  }
+  .social-container {
+    @apply hidden lg:flex h-full gap-[30px] xl:gap-[50px] pr-[30px] xl:pr-[50px];
+    >div {
+      @apply flex items-center gap-[24px] h-full;
+    }
+    .borderline {
+      @apply border-l-[1px] border-white/[0.4] h-full;
+    }
+  }
 }
