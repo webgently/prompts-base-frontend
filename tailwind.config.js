@@ -38,6 +38,7 @@ module.exports = {
             '2xs': '375px',
             xs: '475px',
             ...defaultTheme.screens,
+            '3xl': '1780px',
         },
         // Extend default configurations
         extend: {
